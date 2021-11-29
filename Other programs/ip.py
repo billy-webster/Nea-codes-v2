@@ -12,16 +12,18 @@ class ips:
     def __init__(self):
        self.hostname = socket.gethostname()    #defining the attributes of the class, establishing the variables for the pc name and ip adress 
        self.IPAddr = socket.gethostbyname(self.hostname)  
-    
+       self.Publicip = requests.get('https://api.ipify.org/').text
+
     
     def outputinfo(self):
         print("Your Computer Name is:" + self.hostname)    #first method which simply prints the attributes (ip and hostname)
-        print("Your Computer IP Address is:" + self.IPAddr)
+        print("Your Computer Private IP Address is:" + self.IPAddr)
+        print("Your Computer Public Ip Address is:" + self.Publicip)
 
     
     def outputlatlon(self):
         
-        self.ip = self.IPAddr   #creates new attribute as to stop any manipulation which will alter the output of other methods
+        self.ip = self.Publicip   #creates new attribute as to stop any manipulation which will alter the output of other methods
         self.link1 = ("http://ip-api.com/json/{}").format(self.ip) #stores the link which is used to take the json data from
         self.request = requests.get(self.link1).json() #pulls the json data from the web link and tells python that it is a json format
         
@@ -29,9 +31,11 @@ class ips:
         self.lon1=(self.request['lon'])
         print (self.lat1)
         print (self.lon1)
-        
+
+      
 obj = ips() #defines the object
 obj.outputinfo() #runs the method outputinfo
+obj.outputlatlon() #displays the info of the lat and lon
 
 
 
@@ -50,6 +54,9 @@ def maincode():
     print(request['lat'],"lat")
     print(request['lon'],"lon")
 
+
+lat= getattr(obj, 'lat1') #will globalise the attributes
+lon= getattr(obj, 'lon1') #done so that the data can be acessed in seperate python files
 
 
 
