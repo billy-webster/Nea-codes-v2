@@ -64,3 +64,5 @@ lon= getattr(obj, 'lon1') #done so that the data can be acessed in seperate pyth
 
 #print(response['lat'])
 #print(response['lon'])
+#print(response['lat'])
+#print(response['lon'])
