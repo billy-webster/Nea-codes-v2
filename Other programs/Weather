@@ -1,0 +1,77 @@
+https://api.openweathermap.org/data/2.5/onecall?lat=53.6479&lon=-1.7812&exclude=hourly,daily&appid=c06a4a716e304b47fb03963722bf177f
+
+https://api.openweathermap.org/data/2.5/onecall?lat=53.6479&lon=-1.7812&exclude=hourly,daily&appid=c06a4a716e304b47fb03963722bf177f
+
+{
+   "lat":53.6479,
+   "lon":-1.7812,
+   "timezone":"Europe/London",
+   "timezone_offset":0,
+   "current":{
+      "dt":1638201126,
+      "sunrise":1638172687,
+      "sunset":1638201193,
+      "temp":275.86,
+      "feels_like":271.48,
+      "pressure":1012,
+      "humidity":94,
+      "dew_point":274.99,
+      "uvi":0,
+      "clouds":98,
+      "visibility":10000,
+      "wind_speed":5.27,
+      "wind_deg":246,
+      "wind_gust":13.95,
+      "weather":[
+         {
+            "id":804,
+            "main":"Clouds",
+            "description":"overcast clouds",
+            "icon":"04d"
+         }
+      ]
+   }
+   
+      },
+   {
+      "name":"Golcar",
+      "local_names":{
+         "ascii":"Golcar",
+         "feature_name":"Golcar"
+      },
+      "lat":53.6399,
+      "lon":-1.8557,
+      "country":"GB"
+   },
+   {
+      "name":"Linthwaite",
+      "local_names":{
+         "ascii":"Linthwaite",
+         "feature_name":"Linthwaite"
+      },
+      "lat":53.6242,
+      "lon":-1.8502,
+      "country":"GB"
+   },
+   {
+      "name":"Elland",
+      "local_names":{
+         "ascii":"Elland",
+         "fa":"ایلند، یورکشر غربی",
+         "feature_name":"Elland"
+      },
+      "lat":53.6851,
+      "lon":-1.8388,
+      "country":"GB"
+   },
+   {
+      "name":"Kirkburton",
+      "local_names":{
+         "ascii":"Kirkburton",
+         "feature_name":"Kirkburton"
+      },
+      "lat":53.6289,
+      "lon":-1.6937,
+      "country":"GB"
+   }
+]
