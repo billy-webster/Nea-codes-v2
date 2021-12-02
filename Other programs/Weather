@@ -75,3 +75,28 @@ https://api.openweathermap.org/data/2.5/onecall?lat=53.6479&lon=-1.7812&exclude=
       "country":"GB"
    }
 ]
+filename = "sub.txt"
+lst = []
+with open (filename, 'r') as file:
+    
+        lst.append(row.split()[0],int(row.split()[1]))
+
+
+
+
+def main(lst):
+    horizontal = 0
+    depth = 0
+    for i in lst:
+        if i == "forward":
+            horizontal += int(lst[i+1])
+        if i == "up":
+            depth += int(lst[i+1])
+        
+        else:
+            depth -= int(lst[i+1])
+    
+        total_distance = depth * horizontal
+        return total_distance
+
+print (main(lst)
