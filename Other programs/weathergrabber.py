@@ -10,7 +10,7 @@ kelvin = 273.15
 def apiweather(canvas):
     cityname = textField.get()
     
-    key = ("c06a4a716e304b47fb03963722bf177f")
+    key = 
     link =  "https://api.openweathermap.org/data/2.5/weather?q={}&appid={}".format(cityname,key)
     try:
         jsoninfo = requests.get(link)
